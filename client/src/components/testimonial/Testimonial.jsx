@@ -132,7 +132,7 @@ const TestimonialSection = () => {
       </h3>
       <p className="text-gray-600 mb-4 font-medium">{testimonial.role}</p>
 
-      <p className="text-gray-700 leading-relaxed mb-6 flex-grow">
+      <p className="text-gray-700 font-roboto leading-relaxed mb-6 flex-grow">
         "{testimonial.text}"
       </p>
 

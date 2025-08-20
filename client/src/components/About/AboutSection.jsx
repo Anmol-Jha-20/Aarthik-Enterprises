@@ -47,9 +47,9 @@ const AboutSection = () => {
               </p>
 
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                Reliable RCC Infrastructure
+                Reliable RCC
                 <br />
-                <span className="text-blue-800">solutions for industries!</span>
+                <span className="text-blue-800">Precast Compound Wall!</span>
               </h1>
             </div>
 
@@ -60,12 +60,12 @@ const AboutSection = () => {
                   : "-translate-x-20 opacity-0"
               }`}
             >
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                The construction world is evolving rapidly — and those who adapt
-                are building stronger, smarter, and more sustainable structures.
-                At Aarthik Enterprises, we help you build on a foundation of
-                quality, durability, and trust to meet the demands of tomorrow’s
-                infrastructure.
+              <p className="text-gray-600 font-roboto text-lg leading-relaxed mb-8">
+                The need for durable, fast, and sustainable construction is
+                growing — and precast solutions are leading the way. At Aarthik
+                Enterprises, we provide reliable RCC precast compound walls
+                built on quality, strength, and trust to meet the infrastructure
+                needs of tomorrow.
               </p>
             </div>
 
@@ -116,7 +116,7 @@ const AboutSection = () => {
                   <h3 className="text-white font-bold text-xl mb-3">
                     Material Product Strategy
                   </h3>
-                  <p className="text-white text-sm leading-relaxed">
+                  <p className="text-white text-sm font-roboto leading-relaxed">
                     A focused approach to delivering high-quality materials that
                     align with product goals and customer needs.
                   </p>

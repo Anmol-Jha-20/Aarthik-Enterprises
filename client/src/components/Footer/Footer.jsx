@@ -81,7 +81,7 @@ const Footer = () => {
                     <p className="text-gray-300 text-sm">Established in 2006</p>
                   </div>
                 </div>
-                <p className="text-gray-300 text-sm leading-relaxed mb-6">
+                <p className="text-gray-300 font-roboto text-sm leading-relaxed mb-6">
                   Founded in 2006, Aarthik Enterprises is one of India’s most
                   trusted manufacturers of high-quality RCC infrastructure
                   products.
@@ -190,8 +190,8 @@ const Footer = () => {
                     </div>
                     <div>
                       <p className="text-gray-300 text-sm">
-                        Near Nikunj Toll Plaza, Karsnal Highway, Kankerkheda,
-                        Meerut, Uttar Pradesh – 250001, India
+                        Near Bhuni Toll Plaza, Karnal Highway, Kakkepur, Meerut,
+                        Uttar Pradesh – 250001, India
                       </p>
                     </div>
                   </div>
@@ -220,6 +220,13 @@ const Footer = () => {
                         className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 text-sm"
                       >
                         +(91) 80756 12353
+                      </a>{" "}
+                      <br />
+                      <a
+                        href="tel:+11234567890"
+                        className="text-gray-300 hover:text-yellow-400 transition-colors duration-300 text-sm"
+                      >
+                        +(91) 79077 20632
                       </a>
                     </div>
                   </div>

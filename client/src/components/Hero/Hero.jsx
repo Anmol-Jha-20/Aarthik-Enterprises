@@ -134,7 +134,7 @@ const HeroSlider = () => {
             {/* Description */}
             <div className="mb-10 overflow-hidden">
               <p
-                className={`text-white/90 text-lg md:text-xl max-w-2xl leading-relaxed transform transition-all duration-700 delay-500 ${
+                className={`text-white/90 text-lg md:text-xl font-roboto max-w-2xl leading-relaxed transform transition-all duration-700 delay-500 ${
                   currentSlide >= 0
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"

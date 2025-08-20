@@ -176,7 +176,7 @@ const WhyChooseUsSection = () => {
                 </span>
               </h2>
 
-              <p className="text-white text-lg leading-relaxed max-w-2xl">
+              <p className="text-white font-roboto text-lg leading-relaxed max-w-2xl">
                 With over 15 years of experience, Aarthik Enterprises delivers
                 high-quality RCC benches, poles, and walls using premium
                 materials and modern manufacturing techniques. Backed by skilled

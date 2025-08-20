@@ -35,7 +35,7 @@ const ServicesSection = () => {
     },
     {
       id: 3,
-      title: "Compound Wall",
+      title: "Rcc Readymade Compound Wall",
       description:
         "Prominent & Leading Manufacturer from Bangarmau, we offer precast compound wall, rcc readymade compound wall, rcc wall, rcc compound wall, thickness: 50 mm, 5 ft precast compound walls and wall panel.",
       icon: Truck,
@@ -178,7 +178,7 @@ const ServicesSection = () => {
             RCC Bench And Wall
           </motion.h2>
           <motion.p
-            className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
+            className="text-gray-600 font-roboto text-base sm:text-lg max-w-2xl mx-auto leading-relaxed"
             variants={headerVariants}
           >
             Since 2006, Aarthik Enterprises has been manufacturing high-quality
@@ -230,7 +230,7 @@ const ServicesSection = () => {
                   <h3 className="text-xl lg:text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm lg:text-base leading-relaxed mb-6">
+                  <p className="text-gray-600 font-roboto text-sm lg:text-base leading-relaxed mb-6">
                     {service.description}
                   </p>
 
