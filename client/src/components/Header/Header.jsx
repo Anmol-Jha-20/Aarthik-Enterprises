@@ -32,15 +32,24 @@ const Header = () => {
       "Help & FAQ'S",
     ],
     Projects: [
-      "RCC Wall",
-      "RCC Pole",
-      "Compound Wall",
-      "RCC Bench",
-      "Boundary Wall",
-      "Rcc Garden Bench",
-      "Garden Bench",
-      "Concrete Bench",
-      "Cement Pillar",
+      // "RCC Wall",
+      // "RCC Pole",
+      // "Compound Wall",
+      // "RCC Bench",
+      // "Boundary Wall",
+      // "Rcc Garden Bench",
+      // "Garden Bench",
+      // "Concrete Bench",
+      // "Cement Pillar",
+      { name: "RCC Wall", link: "/rcc-wall" },
+      { name: "RCC Pole", link: "/rcc-pole" },
+      { name: "Compound Wall", link: "/compound-wall" },
+      { name: "RCC Bench", link: "/rcc-bench" },
+      { name: "Boundary Wall", link: "/boundary-wall" },
+      { name: "Rcc Garden Bench", link: "/rcc-garden-bench" },
+      { name: "Garden Bench", link: "/garden-bench" },
+      { name: "Concrete Bench", link: "/concrete-bench" },
+      { name: "Cement Pillar", link: "/cement-pillar" },
     ],
   };
 
@@ -142,13 +151,13 @@ const Header = () => {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               <a
-                href="#"
+                href="/"
                 className="text-gray-700 hover:text-yellow-500 font-medium transition-colors"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="/about-us"
                 className="text-gray-700 hover:text-yellow-500 font-medium transition-colors"
               >
                 About Us
@@ -222,12 +231,12 @@ const Header = () => {
                   >
                     <div className="w-[260px] bg-gray-50 p-4">
                       <ul className="space-y-1">
-                        {menuItems.Projects.map((item, index) => {
+                        {menuItems.Projects.map((project, index) => {
                           const active = hoveredIndex === index;
                           return (
                             <li key={index}>
                               <a
-                                href="#"
+                                href={project.link}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 className={`block rounded-sm py-2.5 px-3 text-sm transition-all
                                   ${
@@ -237,7 +246,7 @@ const Header = () => {
                                   }
                                 `}
                               >
-                                {item}
+                                {project.name}
                               </a>
                             </li>
                           );
@@ -249,13 +258,13 @@ const Header = () => {
               </div>
 
               <a
-                href="#"
+                href="/gallery"
                 className="text-gray-700 hover:text-yellow-500 font-medium transition-colors"
               >
                 Gallery
               </a>
               <a
-                href="#"
+                href="/contact-us"
                 className="text-gray-700 hover:text-yellow-500 font-medium transition-colors"
               >
                 Contact
@@ -284,13 +293,13 @@ const Header = () => {
           <div className="absolute top-full left-0 w-full bg-white border-t border-gray-200 shadow-xl z-50 lg:hidden">
             <div className="px-4 py-4 space-y-4">
               <a
-                href="#"
+                href="/"
                 className="block py-2 text-gray-700 hover:text-yellow-500 font-medium"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="/about-us"
                 className="block py-2 text-gray-700 hover:text-yellow-500 font-medium"
               >
                 About Us
@@ -334,7 +343,7 @@ const Header = () => {
                   onClick={() => toggleMobileMenu("Projects")}
                   className="flex items-center justify-between w-full py-2 text-gray-700 hover:text-yellow-500 font-medium"
                 >
-                  <span>Projects</span>
+                  <span>Our Products</span>
                   <ChevronDown
                     size={16}
                     className={`transform transition-transform ${
@@ -344,14 +353,14 @@ const Header = () => {
                 </button>
                 {mobileActiveMenu === "Projects" && (
                   <div className="pl-4 space-y-2 mt-2">
-                    {menuItems.Projects.map((item, index) => (
+                    {menuItems.Projects.map((project, index) => (
                       <a
                         key={index}
-                        href="#"
+                        href={project.link}
                         className="block py-2 px-3 text-gray-600 hover:text-yellow-500 rounded"
                         onClick={closeMobileMenu}
                       >
-                        {item}
+                        {project.name}
                       </a>
                     ))}
                   </div>
@@ -359,13 +368,13 @@ const Header = () => {
               </div>
 
               <a
-                href="#"
+                href="/gallery"
                 className="block py-2 text-gray-700 hover:text-yellow-500 font-medium"
               >
                 Gallery
               </a>
               <a
-                href="#"
+                href="/contact-us"
                 className="block py-2 text-gray-700 hover:text-yellow-500 font-medium"
               >
                 Contact
