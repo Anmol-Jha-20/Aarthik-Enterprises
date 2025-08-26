@@ -193,7 +193,7 @@ const ServicesSection = () => {
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           variants={containerVariants}
-          initial="hidden"
+          initial="visible"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
