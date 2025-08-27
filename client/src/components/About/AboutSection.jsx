@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import PrecaustCompoundImage from "../../assets/PrecaustCompoundImage.jpeg";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -96,7 +97,7 @@ const AboutSection = () => {
                 <div
                   className="w-full h-64 sm:h-80 lg:h-96 rounded-lg shadow-2xl bg-cover bg-center relative overflow-hidden"
                   style={{
-                    backgroundImage: `url('https://5.imimg.com/data5/SELLER/Default/2025/4/503631781/LQ/SK/MR/192062814/precast-boundary-wall-500x500.jpeg')`,
+                    backgroundImage: `url(${PrecaustCompoundImage})`,
                     transform: `translateY(${scrollY * 0.1}px)`,
                   }}
                 >

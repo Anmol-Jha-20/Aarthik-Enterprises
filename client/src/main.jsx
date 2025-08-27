@@ -8,6 +8,9 @@ import AboutPage from "./Pages/AboutPage.jsx";
 import ContactPage from "./Pages/ContactPage.jsx";
 import AarthikGallery from "./Pages/GalleryPage.jsx";
 import RCCWallProductPage from "./Pages/ProductPages/RccWall.jsx";
+import RCCPoleProductPage from "./Pages/ProductPages/RccPole.jsx";
+import RccBenchProductPage from "./Pages/ProductPages/RccBench.jsx";
+import CompoundWallProductPage from "./Pages/ProductPages/CompoundWall.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +36,38 @@ const router = createBrowserRouter([
       {
         path: "/rcc-wall",
         element: <RCCWallProductPage />,
+      },
+      {
+        path: "/rcc-pole",
+        element: <RCCPoleProductPage />,
+      },
+      {
+        path: "/compound-wall",
+        element: <CompoundWallProductPage />,
+      },
+      {
+        path: "/rcc-bench",
+        element: <RccBenchProductPage />,
+      },
+      {
+        path: "/boundary-wall",
+        element: <RccBenchProductPage />,
+      },
+      {
+        path: "/rcc-garden-bench",
+        element: <RccBenchProductPage />,
+      },
+      {
+        path: "/garden-bench",
+        element: <RccBenchProductPage />,
+      },
+      {
+        path: "/concrete-bench",
+        element: <RccBenchProductPage />,
+      },
+      {
+        path: "/cement-pillar",
+        element: <RccBenchProductPage />,
       },
     ],
   },
