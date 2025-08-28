@@ -248,12 +248,12 @@ const CementPillarProductPage = () => {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://images.jdmagicbox.com/quickquotes/images_main/cement-wall-railing-pillars-size-1-5-feet-2221098945-yo5zo6fp.jpg"
+          src="https://i.ytimg.com/vi/_UMoL_JGISA/maxresdefault.jpg"
           alt="Construction Background"
           className="absolute w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute w-full h-full bg-black opacity-20"></div>
+        <div className="absolute w-full h-full bg-black opacity-30"></div>
 
         {/* Content */}
         <motion.div
@@ -270,7 +270,7 @@ const CementPillarProductPage = () => {
                   solutions for industries! */}
             Strength You Can Trust. Quality You Can See.
           </h1>
-          <p className="max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
+          <p className="max-w-2xl mx-auto text-xl md:text-base lg:text-lg leading-relaxed">
             Reliable, durable, and built to last — discover premium Concrete
             Bench crafted with precision and delivered on time.
           </p>
