@@ -21,7 +21,7 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallImage from "../../assets/RccWallImage.png";
+import RccWallImage from "../../assets/RccWallImage.webp";
 import RccWallProductImage from "../../assets/RccWallIProductImage.png";
 
 const ProductCard = ({ product, index }) => {

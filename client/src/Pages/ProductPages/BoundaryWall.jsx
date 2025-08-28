@@ -82,7 +82,7 @@ const ProductCard = ({ product, index }) => {
                 <div className="text-2xl lg:text-3xl font-bold text-blue-600">
                   ₹{product.price}
                 </div>
-                <div className="text-gray-500">/ Piece</div>
+                <div className="text-gray-500">/ Sq ft</div>
                 <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300">
                   Get Latest Price
                 </button>
@@ -136,106 +136,23 @@ const ProductCard = ({ product, index }) => {
 const ProductShowcase = () => {
   const products = [
     {
-      name: "3 Seater Red RCC Garden Bench",
-      price: "3000",
+      name: "Precast Boundary Wall",
+      price: "90",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888122/OR/DU/OE/192062814/rcc-readymade-bench-1687853777310-1000x1000.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888071/AA/XO/GC/192062814/rcc-garden-bench-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888122/OR/DU/OE/192062814/rcc-readymade-bench-1687853777310-1000x1000.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/4/503631781/LQ/SK/MR/192062814/precast-boundary-wall-1000x1000.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/4/503632482/WN/AG/CX/192062814/precast-boundary-wall-1000x1000.png",
+        "https://5.imimg.com/data5/SELLER/Default/2025/4/503653854/MY/OE/CD/192062814/precast-boundary-wall-1000x1000.jpeg",
+        "https://5.imimg.com/data5/SELLER/Default/2025/4/503653857/IO/NG/WA/192062814/precast-boundary-wall-1000x1000.jpeg",
       ],
       specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
+        Height: "9 Feet",
+        "Built Type": "Modular",
+        Color: "Grey",
         Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        Length: "4 Feet",
-        Width: "3 Feet",
-        "Siting Height": "1.5 Feet",
-        "Usage/Application": "Outdoor",
-        color: "Red",
+        "Country of Origin": "Made in India",
       },
       description:
-        "A 3 Seater Red RCC Garden Bench is a strong and durable outdoor seating solution, ideal for parks, gardens, public spaces, schools, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench is weather-resistant, maintenance-free, and long-lasting.",
-    },
-    {
-      name: "4 Seater With Backrest RCC Garden Bench",
-      price: "4000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873190/GA/UE/EC/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873194/HG/PT/GP/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873198/YL/JA/IT/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "3 Piece",
-        "Seating Capacity": "4 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        "Usage/Application": "Garden",
-        color: "Red",
-      },
-      description:
-        "A 4 Seater With Backrest RCC Garden Bench is a durable and stylish outdoor seating option, designed for parks, gardens, schools, public spaces, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench ensures strength, stability, and long-lasting performance while providing comfortable seating with a supportive backrest.",
-    },
-    {
-      name: "3 Seater Brown RCC Garden Bench",
-      price: "3000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487876158/OR/SO/UN/192062814/rcc-outdoor-garden-bench-500x500.png",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487876656/ZO/WN/UF/192062814/rcc-outdoor-garden-bench-1000x1000.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        Thickness: "12 mm",
-        color: "Brown",
-      },
-      description:
-        "A 3 Seater Brown RCC Garden Bench is a durable and stylish seating option, designed specifically for outdoor spaces like parks, gardens, patios, and public areas. Made from high-quality reinforced cement concrete (RCC), this bench combines strength and aesthetic appeal to provide comfortable, weather-resistant seating that can withstand outdoor elements year-round.",
-    },
-    {
-      name: "3 Seater Rcc Garden Bench",
-      price: "5000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487871438/PS/IW/PX/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487871443/XK/IT/PC/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "3 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "With Armrest",
-        "Surface Finish": "Painted",
-        Application: "Public parks and gardens",
-      },
-      description:
-        "A 3 Seater RCC Garden Bench is a compact and durable seating solution, perfect for parks, gardens, public spaces, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench offers strength, stability, and weather resistance, providing long-lasting outdoor seating with minimal maintenance.",
-    },
-    {
-      name: "3 Seater Without Armrest RCC Garden Bench",
-      price: "4,500",
-      images: [
-        "https://5.imimg.com/data5/ANDROID/Default/2023/7/329877091/XT/CN/PK/192062814/product-jpeg-500x500.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "5 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        "Seating Height": "2.5 Feet",
-      },
-      description:
-        "A 3 Seater Without Armrest RCC Garden Bench is an ideal seating solution for outdoor spaces such as parks, gardens, public areas, and residential complexes. Made from reinforced cement concrete (RCC), this bench offers durability, strength, and a long-lasting design that can withstand outdoor elements while providing comfortable seating.",
+        "Our precast concrete compound wall solutions offer the perfect combination of strength, speed, and style. These readymade compound walls are manufactured using high-grade materials and can be installed in just a fraction of the time compared to traditional walls.",
     },
   ];
 
@@ -248,7 +165,7 @@ const ProductShowcase = () => {
   );
 };
 
-const RccBenchProductPage = () => {
+const BoundaryWallProductPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -333,12 +250,12 @@ const RccBenchProductPage = () => {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://5.imimg.com/data5/SELLER/Default/2025/2/487873194/HG/PT/GP/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg"
+          src="https://5.imimg.com/data5/SELLER/Default/2025/4/503631781/LQ/SK/MR/192062814/precast-boundary-wall-1000x1000.jpeg"
           alt="Construction Background"
           className="absolute w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute w-full h-full bg-black opacity-40"></div>
+        <div className="absolute w-full h-full bg-black opacity-30"></div>
 
         {/* Content */}
         <motion.div
@@ -356,8 +273,8 @@ const RccBenchProductPage = () => {
             Strength You Can Trust. Quality You Can See.
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
-            Reliable, durable, and built to last — discover premium RCC products
-            crafted with precision and delivered on time.
+            Reliable, durable, and built to last — discover premium Precast
+            Boundary Wall crafted with precision and delivered on time.
           </p>
         </motion.div>
       </section>
@@ -385,7 +302,7 @@ const RccBenchProductPage = () => {
               </motion.div>
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                RCC Bench That Stand the Test of Time
+                Durable Precast Boundary Walls Built to Last
               </h1>
 
               <p className="text-xl lg:text-2xl mb-8 text-blue-100">
@@ -395,15 +312,11 @@ const RccBenchProductPage = () => {
               </p>
 
               <p className="text-lg mb-8 leading-relaxed text-gray-600">
-                We offer a wide range of durable and stylish RCC garden benches
-                designed to enhance the look and functionality of outdoor
-                spaces. Our collection includes the 3-seater red RCC garden
-                bench, 4-seater RCC bench with backrest, 3-seater brown RCC
-                garden bench, a standard 3-seater model, and a 3-seater RCC
-                bench without armrests. Each bench is crafted for long-lasting
-                performance and comfort, making them an ideal choice for
-                gardens, parks, residential complexes, and other outdoor
-                settings.
+                Explore our complete range of high-quality precast boundary
+                walls, designed for durability, quick installation, and
+                long-term performance. Ideal for residential, commercial, and
+                industrial applications, our solutions offer strength, security,
+                and aesthetic appeal.
               </p>
 
               <motion.div
@@ -429,8 +342,8 @@ const RccBenchProductPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/2/487873190/GA/UE/EC/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpeg"
-                  alt="RCC Bench Construction"
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/4/503653854/MY/OE/CD/192062814/precast-boundary-wall-1000x1000.jpeg"
+                  alt="Boundary Wall Construction"
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -445,11 +358,12 @@ const RccBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Our <span className="text-blue-600">RCC Bench</span>?
+              Why Choose Our{" "}
+              <span className="text-blue-600">Boundary Wall</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the perfect blend of strength, durability, and
-              cost-effectiveness with our premium RCC Bench solutions.
+              cost-effectiveness with our premium Boundary Wall solutions.
             </p>
           </motion.div>
 
@@ -489,8 +403,8 @@ const RccBenchProductPage = () => {
               <span className="text-yellow-500">Every Application</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our RCC Bench are versatile solutions suitable for various sectors
-              and requirements.
+              Our Boundary Wall are versatile solutions suitable for various
+              sectors and requirements.
             </p>
           </motion.div>
 
@@ -524,11 +438,11 @@ const RccBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">RCC Bench</span> Products
+              Our <span className="text-blue-600">Precast Boundary Wall</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our complete range of premium RCC Bench designed for
-              different heights and applications.
+              Offering you a complete choice of products which include precast
+              boundary wall.
             </p>
           </motion.div>
 
@@ -539,4 +453,4 @@ const RccBenchProductPage = () => {
   );
 };
 
-export default RccBenchProductPage;
+export default BoundaryWallProductPage;

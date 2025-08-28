@@ -11,6 +11,11 @@ import RCCWallProductPage from "./Pages/ProductPages/RccWall.jsx";
 import RCCPoleProductPage from "./Pages/ProductPages/RccPole.jsx";
 import RccBenchProductPage from "./Pages/ProductPages/RccBench.jsx";
 import CompoundWallProductPage from "./Pages/ProductPages/CompoundWall.jsx";
+import BoundaryWallProductPage from "./Pages/ProductPages/BoundaryWall.jsx";
+import RccGardenBenchProductPage from "./Pages/ProductPages/RccGardenBench.jsx";
+import GardenBenchProductPage from "./Pages/ProductPages/GardenBench.jsx";
+import ConcreteBenchProductPage from "./Pages/ProductPages/ConcreteBench.jsx";
+import CementPillarProductPage from "./Pages/ProductPages/CementPillar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -51,23 +56,23 @@ const router = createBrowserRouter([
       },
       {
         path: "/boundary-wall",
-        element: <RccBenchProductPage />,
+        element: <BoundaryWallProductPage />,
       },
       {
         path: "/rcc-garden-bench",
-        element: <RccBenchProductPage />,
+        element: <RccGardenBenchProductPage />,
       },
       {
         path: "/garden-bench",
-        element: <RccBenchProductPage />,
+        element: <GardenBenchProductPage />,
       },
       {
         path: "/concrete-bench",
-        element: <RccBenchProductPage />,
+        element: <ConcreteBenchProductPage />,
       },
       {
         path: "/cement-pillar",
-        element: <RccBenchProductPage />,
+        element: <CementPillarProductPage />,
       },
     ],
   },

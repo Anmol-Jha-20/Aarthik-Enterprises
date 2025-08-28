@@ -136,106 +136,21 @@ const ProductCard = ({ product, index }) => {
 const ProductShowcase = () => {
   const products = [
     {
-      name: "3 Seater Red RCC Garden Bench",
-      price: "3000",
+      name: "3 Seater RCC Concrete Garden Benches",
+      price: "3,500",
       images: [
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888122/OR/DU/OE/192062814/rcc-readymade-bench-1687853777310-1000x1000.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888071/AA/XO/GC/192062814/rcc-garden-bench-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888122/OR/DU/OE/192062814/rcc-readymade-bench-1687853777310-1000x1000.jpeg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        Length: "4 Feet",
-        Width: "3 Feet",
-        "Siting Height": "1.5 Feet",
-        "Usage/Application": "Outdoor",
-        color: "Red",
-      },
-      description:
-        "A 3 Seater Red RCC Garden Bench is a strong and durable outdoor seating solution, ideal for parks, gardens, public spaces, schools, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench is weather-resistant, maintenance-free, and long-lasting.",
-    },
-    {
-      name: "4 Seater With Backrest RCC Garden Bench",
-      price: "4000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873190/GA/UE/EC/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873194/HG/PT/GP/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487873198/YL/JA/IT/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "3 Piece",
-        "Seating Capacity": "4 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        "Usage/Application": "Garden",
-        color: "Red",
-      },
-      description:
-        "A 4 Seater With Backrest RCC Garden Bench is a durable and stylish outdoor seating option, designed for parks, gardens, schools, public spaces, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench ensures strength, stability, and long-lasting performance while providing comfortable seating with a supportive backrest.",
-    },
-    {
-      name: "3 Seater Brown RCC Garden Bench",
-      price: "3000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487876158/OR/SO/UN/192062814/rcc-outdoor-garden-bench-500x500.png",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487876656/ZO/WN/UF/192062814/rcc-outdoor-garden-bench-1000x1000.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        Thickness: "12 mm",
-        color: "Brown",
-      },
-      description:
-        "A 3 Seater Brown RCC Garden Bench is a durable and stylish seating option, designed specifically for outdoor spaces like parks, gardens, patios, and public areas. Made from high-quality reinforced cement concrete (RCC), this bench combines strength and aesthetic appeal to provide comfortable, weather-resistant seating that can withstand outdoor elements year-round.",
-    },
-    {
-      name: "3 Seater Rcc Garden Bench",
-      price: "5000",
-      images: [
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487871438/PS/IW/PX/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487871443/XK/IT/PC/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
       ],
       specs: {
-        "Minimum Order Quantity": "3 Piece",
+        "Minimum Order Quantity": "10 Piece",
         "Seating Capacity": "3 Seater",
-        Material: "RCC",
         Backrest: "With Backrest",
         Armrest: "With Armrest",
-        "Surface Finish": "Painted",
-        Application: "Public parks and gardens",
+        "Surface Finish": "Natural",
+        "Country of Origin": "Made in India",
       },
       description:
-        "A 3 Seater RCC Garden Bench is a compact and durable seating solution, perfect for parks, gardens, public spaces, and residential areas. Made from high-quality reinforced cement concrete (RCC), this bench offers strength, stability, and weather resistance, providing long-lasting outdoor seating with minimal maintenance.",
-    },
-    {
-      name: "3 Seater Without Armrest RCC Garden Bench",
-      price: "4,500",
-      images: [
-        "https://5.imimg.com/data5/ANDROID/Default/2023/7/329877091/XT/CN/PK/192062814/product-jpeg-500x500.jpg",
-      ],
-      specs: {
-        "Minimum Order Quantity": "5 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Surface Finish": "Painted",
-        "Seating Height": "2.5 Feet",
-      },
-      description:
-        "A 3 Seater Without Armrest RCC Garden Bench is an ideal seating solution for outdoor spaces such as parks, gardens, public areas, and residential complexes. Made from reinforced cement concrete (RCC), this bench offers durability, strength, and a long-lasting design that can withstand outdoor elements while providing comfortable seating.",
+        "A 3 Seater Rectangular RCC Concrete Bench is a durable and functional seating solution designed for public parks, gardens, residential areas, and outdoor spaces. Made from reinforced cement concrete (RCC), this bench offers excellent strength, longevity, and minimal maintenance, while providing a comfortable and spacious seating option for outdoor settings.",
     },
   ];
 
@@ -248,7 +163,7 @@ const ProductShowcase = () => {
   );
 };
 
-const RccBenchProductPage = () => {
+const ConcreteBenchProductPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -293,8 +208,9 @@ const RccBenchProductPage = () => {
     },
     {
       icon: <Award className="w-6 h-6" />,
-      title: "Ideal for residential, industrial, and agricultural use",
-      description: "Versatile application across multiple sectors",
+      title: "Ideal for parks, public spaces, and residential gardens.",
+      description:
+        "Ideal for parks, residential gardens, and public spaces, this Concrete Bench offers durable, comfortable seating with low maintenance.",
     },
   ];
 
@@ -356,8 +272,8 @@ const RccBenchProductPage = () => {
             Strength You Can Trust. Quality You Can See.
           </h1>
           <p className="max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
-            Reliable, durable, and built to last — discover premium RCC products
-            crafted with precision and delivered on time.
+            Reliable, durable, and built to last — discover premium Concrete
+            Bench crafted with precision and delivered on time.
           </p>
         </motion.div>
       </section>
@@ -385,7 +301,7 @@ const RccBenchProductPage = () => {
               </motion.div>
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                RCC Bench That Stand the Test of Time
+                The Concrete Bench Built to Last
               </h1>
 
               <p className="text-xl lg:text-2xl mb-8 text-blue-100">
@@ -395,15 +311,14 @@ const RccBenchProductPage = () => {
               </p>
 
               <p className="text-lg mb-8 leading-relaxed text-gray-600">
-                We offer a wide range of durable and stylish RCC garden benches
-                designed to enhance the look and functionality of outdoor
-                spaces. Our collection includes the 3-seater red RCC garden
-                bench, 4-seater RCC bench with backrest, 3-seater brown RCC
-                garden bench, a standard 3-seater model, and a 3-seater RCC
-                bench without armrests. Each bench is crafted for long-lasting
-                performance and comfort, making them an ideal choice for
-                gardens, parks, residential complexes, and other outdoor
-                settings.
+                We offer a high-quality 3-seater RCC concrete garden bench,
+                designed for durability, comfort, and long-lasting outdoor use.
+                Ideal for parks, gardens, walkways, and public spaces, this
+                bench combines sturdy construction with a clean, timeless design
+                to suit a variety of environments. Its weather-resistant
+                materials ensure minimal maintenance, even in harsh conditions.
+                A practical and aesthetic addition to any outdoor setting, it
+                provides reliable seating for years to come.
               </p>
 
               <motion.div
@@ -429,9 +344,9 @@ const RccBenchProductPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/2/487873190/GA/UE/EC/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpeg"
-                  alt="RCC Bench Construction"
-                  className="w-full h-96 lg:h-[500px] object-cover"
+                  src="https://5.imimg.com/data5/SELLER/Default/2025/2/487871443/XK/IT/PC/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg"
+                  alt="Concrete Bench Construction"
+                  className="w-full h-96 lg:h-[500px] object-contain"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
@@ -445,11 +360,12 @@ const RccBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Our <span className="text-blue-600">RCC Bench</span>?
+              Why Choose Our{" "}
+              <span className="text-blue-600">Concrete Bench</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the perfect blend of strength, durability, and
-              cost-effectiveness with our premium RCC Bench solutions.
+              cost-effectiveness with our premium Concrete Bench solutions.
             </p>
           </motion.div>
 
@@ -489,8 +405,8 @@ const RccBenchProductPage = () => {
               <span className="text-yellow-500">Every Application</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our RCC Bench are versatile solutions suitable for various sectors
-              and requirements.
+              Our Concrete Bench are versatile solutions suitable for various
+              sectors and requirements.
             </p>
           </motion.div>
 
@@ -524,11 +440,11 @@ const RccBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">RCC Bench</span> Products
+              Our <span className="text-blue-600">Concrete Bench</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Explore our complete range of premium RCC Bench designed for
-              different heights and applications.
+              Offering you a complete choice of products which include 3 seater
+              rcc concrete garden benches.
             </p>
           </motion.div>
 
@@ -539,4 +455,4 @@ const RccBenchProductPage = () => {
   );
 };
 
-export default RccBenchProductPage;
+export default ConcreteBenchProductPage;
