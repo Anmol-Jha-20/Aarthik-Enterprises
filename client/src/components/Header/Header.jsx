@@ -50,6 +50,8 @@ const Header = () => {
       { name: "Garden Bench", link: "/garden-bench" },
       { name: "Concrete Bench", link: "/concrete-bench" },
       { name: "Cement Pillar", link: "/cement-pillar" },
+      { name: "Flower Pot", link: "/flower-pot" },
+      { name: "Tree Guard", link: "/tree-guard" },
     ],
   };
 
@@ -238,7 +240,7 @@ const Header = () => {
                               <a
                                 href={project.link}
                                 onMouseEnter={() => setHoveredIndex(index)}
-                                className={`block rounded-sm py-2.5 px-3 text-sm transition-all
+                                className={`block rounded-sm py-2 px-3 text-sm transition-all
                                   ${
                                     active
                                       ? "bg-yellow-400 text-white"
@@ -273,7 +275,10 @@ const Header = () => {
 
             {/* Right Side Icons */}
             <div className="flex items-center space-x-4">
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 rounded-md font-medium transition-colors hidden sm:block">
+              <button
+                onClick={() => (window.location.href = "tel:918075612353")}
+                className="bg-yellow-400 hover:bg-yellow-500 text-white cursor-pointer px-6 py-2 rounded-md font-medium transition-colors hidden sm:block"
+              >
                 Get Consultation
               </button>
 
@@ -391,7 +396,10 @@ const Header = () => {
                     </span>
                   </div>
                 </div> */}
-                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-white py-3 rounded-md font-medium transition-colors">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-white py-3 rounded-md font-medium transition-colors"
+                >
                   Get Consultation
                 </button>
               </div>

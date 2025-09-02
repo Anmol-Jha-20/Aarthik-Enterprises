@@ -8,6 +8,7 @@ import {
   Calculator,
   Forklift,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -21,6 +22,7 @@ const ServicesSection = () => {
       iconColor: "text-orange-500",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487879841/LY/PC/OG/192062814/10-feet-rcc-readymade-precast-compound-wall-1000x1000.jpg",
+      link: "/rcc-wall",
     },
     {
       id: 2,
@@ -32,6 +34,7 @@ const ServicesSection = () => {
       iconColor: "text-blue-500",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487854312/EC/FP/ET/192062814/4feet-rcc-fencing-poles-1000x1000.jpg",
+      link: "/rcc-pole",
     },
     {
       id: 3,
@@ -43,6 +46,7 @@ const ServicesSection = () => {
       iconColor: "text-gray-600",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503653329/TR/QG/TL/192062814/rcc-readymade-compound-wall-1000x1000.jpeg",
+      link: "/compound-wall",
     },
     {
       id: 4,
@@ -54,6 +58,7 @@ const ServicesSection = () => {
       iconColor: "text-orange-500",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2023/6/320888671/DR/MI/OT/192062814/rcc-garden-bench-500x500.jpg",
+      link: "/rcc-bench",
     },
     {
       id: 5,
@@ -65,6 +70,7 @@ const ServicesSection = () => {
       iconColor: "text-blue-500",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503631781/LQ/SK/MR/192062814/precast-boundary-wall-1000x1000.jpeg",
+      link: "/boundary-wall",
     },
     {
       id: 6,
@@ -76,6 +82,7 @@ const ServicesSection = () => {
       iconColor: "text-gray-600",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503687657/RJ/QC/AY/192062814/with-arm-rest-3-seater-cast-iron-park-bench-for-long-lasting-and-durable-with-back-1000x1000.jpg",
+      link: "/rcc-garden-bench",
     },
     {
       id: 7,
@@ -87,6 +94,7 @@ const ServicesSection = () => {
       iconColor: "text-gray-600",
       image:
         "https://5.imimg.com/data5/ANDROID/Default/2025/3/493941095/LH/OZ/QX/192062814/product-jpeg-1000x1000.jpg",
+      link: "/garden-bench",
     },
     {
       id: 8,
@@ -98,6 +106,7 @@ const ServicesSection = () => {
       iconColor: "text-gray-600",
       image:
         "https://img.freepik.com/free-photo/bench-park_1187-2312.jpg?t=st=1755676028~exp=1755679628~hmac=cddfe8a7364d5bbac8e8f7166c4184fbc55cc7a4ce36d9027008662ce9bbb471&w=1060",
+      link: "/concrete-bench",
     },
     {
       id: 9,
@@ -109,6 +118,7 @@ const ServicesSection = () => {
       iconColor: "text-gray-600",
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503686774/CQ/YR/HX/192062814/grey-cement-railing-pillar-for-staircase-500x500.jpg",
+      link: "/cement-pillar",
     },
   ];
 
@@ -149,6 +159,8 @@ const ServicesSection = () => {
       },
     },
   };
+
+  const navigate = useNavigate();
 
   return (
     <section
@@ -236,10 +248,14 @@ const ServicesSection = () => {
 
                   {/* Read More Link */}
                   <motion.button
-                    className="inline-flex items-center text-blue-600 font-medium text-sm lg:text-base hover:text-blue-700 transition-colors duration-300 group/link"
+                    className="inline-flex items-center text-blue-600 cursor-pointer font-medium text-sm lg:text-base hover:text-blue-700 transition-colors duration-300 group/link"
                     whileHover={{ x: 5 }}
                     transition={{ duration: 0.2 }}
                     aria-label={`Read more about ${service.title}`}
+                    onClick={() => {
+                      navigate(`${service.link}`);
+                      window.scrollTo({ top: 0, behavior: "smooth" });
+                    }}
                   >
                     Read More
                     <motion.svg

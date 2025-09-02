@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
   const slides = [
     {
@@ -147,12 +149,13 @@ const HeroSlider = () => {
             {/* CTA Button */}
             <div className="overflow-hidden">
               <button
-                className={`bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center gap-2 group ${
+                className={`bg-yellow-500 hover:bg-yellow-400 cursor-pointer text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl flex items-center gap-2 group ${
                   currentSlide >= 0
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"
                 }`}
                 style={{ transitionDelay: "600ms" }}
+                onClick={() => navigate("/about-us")}
               >
                 Explore More
                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

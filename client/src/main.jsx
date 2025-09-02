@@ -16,6 +16,8 @@ import RccGardenBenchProductPage from "./Pages/ProductPages/RccGardenBench.jsx";
 import GardenBenchProductPage from "./Pages/ProductPages/GardenBench.jsx";
 import ConcreteBenchProductPage from "./Pages/ProductPages/ConcreteBench.jsx";
 import CementPillarProductPage from "./Pages/ProductPages/CementPillar.jsx";
+import FlowerPotProductPage from "./Pages/ProductPages/FlowerPot.jsx";
+import TreeGuardProductPage from "./Pages/ProductPages/TreeGuard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +75,14 @@ const router = createBrowserRouter([
       {
         path: "/cement-pillar",
         element: <CementPillarProductPage />,
+      },
+      {
+        path: "/flower-pot",
+        element: <FlowerPotProductPage />,
+      },
+      {
+        path: "/tree-guard",
+        element: <TreeGuardProductPage />,
       },
     ],
   },

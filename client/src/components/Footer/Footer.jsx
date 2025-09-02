@@ -34,7 +34,10 @@ const Footer = () => {
           <h2 className="text-white text-2xl md:text-3xl font-bold text-center md:text-left">
             Searching For Durable RCC Infrastructure Solutions?
           </h2>
-          <button className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-3 rounded-md font-semibold transition-colors duration-300 whitespace-nowrap">
+          <button
+            onClick={() => (window.location.href = "tel:918075612353")}
+            className="bg-blue-900 hover:bg-blue-800 cursor-pointer text-white px-8 py-3 rounded-md font-semibold transition-colors duration-300 whitespace-nowrap"
+          >
             Make Appointment
           </button>
         </div>

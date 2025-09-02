@@ -21,8 +21,7 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
-import RccPoleImage from "../../assets/RccPoleImage.png";
+import TreeGuardImage from "../../assets/TreeGuard.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -83,7 +82,10 @@ const ProductCard = ({ product, index }) => {
                   ₹{product.price}
                 </div>
                 <div className="text-gray-500">/ Piece</div>
-                <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300"
+                >
                   Get Latest Price
                 </button>
               </div>
@@ -139,27 +141,18 @@ const ProductCard = ({ product, index }) => {
 const ProductShowcase = () => {
   const products = [
     {
-      name: "3 Seater Rectangular RCC Garden Bench",
-      price: "3,200",
-      images: [
-        "https://5.imimg.com/data5/ANDROID/Default/2025/3/493932321/DV/YE/NX/192062814/product-jpeg-1000x1000.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2025/3/493941095/LH/OZ/QX/192062814/product-jpeg-1000x1000.jpg",
-      ],
+      name: "Tree Guard",
+      price: "1,050",
+      images: [TreeGuardImage],
       specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Usage/Application": "Garden",
-        Shape: "Rectangular",
-        Surface: "Finish Painted",
-        Length: "4 Feet",
-        Width: "3 feet",
-        "Seating Height": "2 Feet",
+        Shape: "Cylindrical / Round",
+        "Usage/Application": "Tree Protection / Outdoor Landscaping",
+        Material: "Cement / Concrete",
+        Height: "4 to 5 Feet",
+        "Country of Origin": "Made in India",
       },
       description:
-        "A 3 Seater Rectangular RCC Garden Bench is a durable and functional seating solution designed for public parks, gardens, residential areas, and outdoor spaces. Made from reinforced cement concrete (RCC), this bench offers excellent strength, longevity, and minimal maintenance, while providing a comfortable and spacious seating option for outdoor settings.",
+        "This Grey Cement Tree Guard is a strong and durable protective structure designed to safeguard young trees in outdoor environments. Crafted from high-quality cement, it provides robust protection against animals, mechanical damage, and harsh weather conditions, ensuring healthy tree growth. Its sturdy design and long-lasting build make it ideal for use in gardens, parks, roadside plantations, and other landscaped areas.",
     },
   ];
 
@@ -172,7 +165,7 @@ const ProductShowcase = () => {
   );
 };
 
-const GardenBenchProductPage = () => {
+const TreeGuardProductPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -219,7 +212,7 @@ const GardenBenchProductPage = () => {
       icon: <Award className="w-6 h-6" />,
       title: "Ideal for parks, public spaces, and residential gardens.",
       description:
-        "Ideal for parks, residential gardens, and public spaces, this Garden Bench offers durable, comfortable seating with low maintenance.",
+        "Ideal for parks, residential gardens, and public spaces, this Tree Guard offers durable, comfortable seating with low maintenance.",
     },
   ];
 
@@ -258,12 +251,12 @@ const GardenBenchProductPage = () => {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://5.imimg.com/data5/SELLER/Default/2025/2/487873194/HG/PT/GP/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg"
+          src={TreeGuardImage}
           alt="Construction Background"
           className="absolute w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute w-full h-full bg-black opacity-40"></div>
+        <div className="absolute w-full h-full bg-black opacity-30"></div>
 
         {/* Content */}
         <motion.div
@@ -280,8 +273,8 @@ const GardenBenchProductPage = () => {
                   solutions for industries! */}
             Strength You Can Trust. Quality You Can See.
           </h1>
-          <p className="max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
-            Reliable, durable, and built to last — discover premium Garden Bench
+          <p className="max-w-2xl mx-auto text-xl md:text-base lg:text-lg leading-relaxed">
+            Reliable, durable, and built to last — discover premium Tree Guard
             crafted with precision and delivered on time.
           </p>
         </motion.div>
@@ -310,7 +303,7 @@ const GardenBenchProductPage = () => {
               </motion.div>
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                The Garden Bench Built to Last
+                The Tree Guard Built to Last
               </h1>
 
               <p className="text-xl lg:text-2xl mb-8 text-blue-100">
@@ -320,14 +313,14 @@ const GardenBenchProductPage = () => {
               </p>
 
               <p className="text-lg mb-8 leading-relaxed text-gray-600">
-                We offer a premium range of 3-seater rectangular RCC garden
-                benches, designed for strength, comfort, and durability. Ideal
-                for outdoor settings such as parks, gardens, and public areas,
-                our benches are crafted with high-quality materials and
-                delivered with efficiency and reliability. Their
-                weather-resistant construction ensures long-term performance
-                with minimal maintenance. A perfect blend of functionality and
-                style, this bench enhances any outdoor environment.
+                We offer a premium range of long-lasting tree guards, engineered
+                for maximum protection and durability. Designed to shield young
+                trees from animals, weather, and accidental damage, our tree
+                guards are built using high-quality, weather-resistant
+                materials. Ideal for parks, gardens, roadsides, and agricultural
+                areas, they ensure long-term performance with minimal
+                maintenance. A dependable solution for healthy tree growth —
+                built to last in every environment.
               </p>
 
               <motion.div
@@ -356,8 +349,8 @@ const GardenBenchProductPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/ANDROID/Default/2025/3/493932321/DV/YE/NX/192062814/product-jpeg-1000x1000.jpg"
-                  alt="Garden Bench Construction"
+                  src={TreeGuardImage}
+                  alt="Tree Guard Construction"
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -372,12 +365,11 @@ const GardenBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Our <span className="text-blue-600">Garden Bench</span>
-              ?
+              Why Choose Our <span className="text-blue-600">Tree Guard</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the perfect blend of strength, durability, and
-              cost-effectiveness with our premium Garden Bench solutions.
+              cost-effectiveness with our premium Tree Guard solutions.
             </p>
           </motion.div>
 
@@ -417,7 +409,7 @@ const GardenBenchProductPage = () => {
               <span className="text-yellow-500">Every Application</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our Garden Bench are versatile solutions suitable for various
+              Our Tree Guard are versatile solutions suitable for various
               sectors and requirements.
             </p>
           </motion.div>
@@ -452,11 +444,13 @@ const GardenBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">Garden Bench</span>
+              Our <span className="text-blue-600">Tree Guard</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Providing you the best range of 3 seater rectangular rcc garden
-              bench with effective & timely delivery.
+              Offering a premium range of durable and reliable tree guards,
+              designed to protect young trees from damage while enhancing
+              landscape aesthetics. Engineered for strength and longevity, our
+              tree guards ensure effective protection with timely delivery.
             </p>
           </motion.div>
 
@@ -467,4 +461,4 @@ const GardenBenchProductPage = () => {
   );
 };
 
-export default GardenBenchProductPage;
+export default TreeGuardProductPage;

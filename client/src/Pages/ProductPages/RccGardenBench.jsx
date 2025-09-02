@@ -21,8 +21,7 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
-import RccPoleImage from "../../assets/RccPoleImage.png";
+import Rccgardenimage from "../../assets/Rccgardenimage.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -83,7 +82,10 @@ const ProductCard = ({ product, index }) => {
                   ₹{product.price}
                 </div>
                 <div className="text-gray-500">/ Piece</div>
-                <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300"
+                >
                   Get Latest Price
                 </button>
               </div>
@@ -121,7 +123,10 @@ const ProductCard = ({ product, index }) => {
                 {/* <Contact className="w-5 h-5 mr-2" /> */}
                 Contact Us
               </button>
-              <button className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center">
+              <button
+                onClick={() => (window.location.href = "tel:918075612353")}
+                className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </button>
@@ -326,7 +331,10 @@ const RccGardenBenchProductPage = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Get Quote Now
                 </button>
                 {/* <button className="border-2 border-white text-black hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
@@ -343,9 +351,9 @@ const RccGardenBenchProductPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/SELLER/Default/2025/4/503687657/RJ/QC/AY/192062814/with-arm-rest-3-seater-cast-iron-park-bench-for-long-lasting-and-durable-with-back-500x500.jpg"
+                  src={Rccgardenimage}
                   alt="RCC Garden Bench Construction"
-                  className="w-full h-96 lg:h-[500px] object-cover"
+                  className="w-full h-full lg:h-[500px] object-contain md:object-cover xl:object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>

@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import TestimonialSection from "../components/testimonial/Testimonial.jsx";
 import { Check, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -217,6 +219,10 @@ const AboutPage = () => {
                   className="bg-yellow-400 hover:bg-yellow-500 cursor-pointer text-white font-semibold px-6 py-3 rounded-md transition-colors duration-300 shadow-md"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    navigate("/contact-us");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   Contact Us
                 </motion.button>
@@ -358,6 +364,10 @@ const AboutPage = () => {
                     boxShadow: "0 20px 40px rgba(245, 158, 11, 0.4)",
                   }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => {
+                    navigate("/contact-us");
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
                 >
                   <span>Contact Us</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />

@@ -21,8 +21,12 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
-import RccPoleImage from "../../assets/RccPoleImage.png";
+import FlowerPot1 from "../../assets/FlowerPot1.jpeg";
+import FlowerPot2 from "../../assets/FlowerPot2.jpeg";
+import FlowerPot3 from "../../assets/FlowerPot3.jpeg";
+import FlowerPot4 from "../../assets/FlowerPot4.jpeg";
+import FlowerPot5 from "../../assets/FlowerPot5.jpeg";
+import FlowerPot6 from "../../assets/FlowerPot6.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -83,7 +87,10 @@ const ProductCard = ({ product, index }) => {
                   ₹{product.price}
                 </div>
                 <div className="text-gray-500">/ Piece</div>
-                <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300"
+                >
                   Get Latest Price
                 </button>
               </div>
@@ -101,7 +108,8 @@ const ProductCard = ({ product, index }) => {
                     key={key}
                     className="flex justify-between py-2 border-b border-gray-100 last:border-b-0"
                   >
-                    <span className="text-gray-600 font-medium">{key}</span>
+                    <span className="text-gray-600 font-medium">{key}:</span>
+                    &nbsp;
                     <span className="text-gray-900 font-semibold">{value}</span>
                   </div>
                 ))}
@@ -139,27 +147,24 @@ const ProductCard = ({ product, index }) => {
 const ProductShowcase = () => {
   const products = [
     {
-      name: "3 Seater Rectangular RCC Garden Bench",
-      price: "3,200",
-      images: [
-        "https://5.imimg.com/data5/ANDROID/Default/2025/3/493932321/DV/YE/NX/192062814/product-jpeg-1000x1000.jpg",
-        "https://5.imimg.com/data5/ANDROID/Default/2025/3/493941095/LH/OZ/QX/192062814/product-jpeg-1000x1000.jpg",
-      ],
+      name: "Flower Pot",
+      price: "210",
+      images: [FlowerPot2, FlowerPot3, FlowerPot4, FlowerPot5, FlowerPot6],
       specs: {
-        "Minimum Order Quantity": "50 Piece",
-        "Seating Capacity": "3 Seater",
-        Material: "RCC",
-        Backrest: "With Backrest",
-        Armrest: "Without Armrest",
-        "Usage/Application": "Garden",
-        Shape: "Rectangular",
-        Surface: "Finish Painted",
-        Length: "4 Feet",
-        Width: "3 feet",
-        "Seating Height": "2 Feet",
+        Material: "High-quality cement",
+
+        Finish: "Smooth / Matte / Textured",
+
+        Color: "Neutral grey / custom colors available",
+
+        Shape: "Round / Square / Rectangular",
+
+        "Size Options": "Small, Medium, Large",
+
+        Usage: "Suitable for both indoor and outdoor",
       },
       description:
-        "A 3 Seater Rectangular RCC Garden Bench is a durable and functional seating solution designed for public parks, gardens, residential areas, and outdoor spaces. Made from reinforced cement concrete (RCC), this bench offers excellent strength, longevity, and minimal maintenance, while providing a comfortable and spacious seating option for outdoor settings.",
+        "Our Flower Pot is the perfect combination of strength, style, and simplicity. Crafted from premium materials, this pot is designed to withstand all weather conditions while keeping your plants safe and thriving. Ideal for both indoor and outdoor use, its timeless design complements any décor — from modern balconies to lush garden spaces. With its low-maintenance finish and durable build, this flower pot is made to last season after season.",
     },
   ];
 
@@ -172,7 +177,7 @@ const ProductShowcase = () => {
   );
 };
 
-const GardenBenchProductPage = () => {
+const FlowerPotProductPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -219,7 +224,7 @@ const GardenBenchProductPage = () => {
       icon: <Award className="w-6 h-6" />,
       title: "Ideal for parks, public spaces, and residential gardens.",
       description:
-        "Ideal for parks, residential gardens, and public spaces, this Garden Bench offers durable, comfortable seating with low maintenance.",
+        "Ideal for parks, residential gardens, and public spaces, this Flower Pot offers durable, comfortable seating with low maintenance.",
     },
   ];
 
@@ -258,12 +263,12 @@ const GardenBenchProductPage = () => {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://5.imimg.com/data5/SELLER/Default/2025/2/487873194/HG/PT/GP/192062814/4-seater-rcc-garden-bench-with-backrest-1000x1000.jpg"
+          src={FlowerPot1}
           alt="Construction Background"
           className="absolute w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute w-full h-full bg-black opacity-40"></div>
+        <div className="absolute w-full h-full bg-black opacity-30"></div>
 
         {/* Content */}
         <motion.div
@@ -280,9 +285,9 @@ const GardenBenchProductPage = () => {
                   solutions for industries! */}
             Strength You Can Trust. Quality You Can See.
           </h1>
-          <p className="max-w-2xl mx-auto text-sm md:text-base lg:text-lg leading-relaxed">
-            Reliable, durable, and built to last — discover premium Garden Bench
-            crafted with precision and delivered on time.
+          <p className="max-w-2xl mx-auto text-xl md:text-base lg:text-lg leading-relaxed">
+            Reliable, durable, and built to last — discover premium Concrete
+            Bench crafted with precision and delivered on time.
           </p>
         </motion.div>
       </section>
@@ -310,7 +315,7 @@ const GardenBenchProductPage = () => {
               </motion.div>
 
               <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                The Garden Bench Built to Last
+                The Flower Pot Built to Last
               </h1>
 
               <p className="text-xl lg:text-2xl mb-8 text-blue-100">
@@ -320,14 +325,15 @@ const GardenBenchProductPage = () => {
               </p>
 
               <p className="text-lg mb-8 leading-relaxed text-gray-600">
-                We offer a premium range of 3-seater rectangular RCC garden
-                benches, designed for strength, comfort, and durability. Ideal
-                for outdoor settings such as parks, gardens, and public areas,
-                our benches are crafted with high-quality materials and
-                delivered with efficiency and reliability. Their
-                weather-resistant construction ensures long-term performance
-                with minimal maintenance. A perfect blend of functionality and
-                style, this bench enhances any outdoor environment.
+                Discover "The Flower Pot Built to Last" — a premium collection
+                of durable and stylish flower pots crafted from high-quality
+                materials. Designed to withstand the elements, these pots are
+                perfect for both indoor and outdoor use. Their robust
+                construction ensures long-lasting performance with minimal
+                maintenance, making them ideal for gardens, balconies, patios,
+                and more. Combining timeless design with exceptional strength,
+                these flower pots are the perfect choice for showcasing your
+                plants beautifully, season after season.
               </p>
 
               <motion.div
@@ -356,8 +362,8 @@ const GardenBenchProductPage = () => {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://5.imimg.com/data5/ANDROID/Default/2025/3/493932321/DV/YE/NX/192062814/product-jpeg-1000x1000.jpg"
-                  alt="Garden Bench Construction"
+                  src={FlowerPot1}
+                  alt="Flower Pot Construction"
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
@@ -372,12 +378,11 @@ const GardenBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Why Choose Our <span className="text-blue-600">Garden Bench</span>
-              ?
+              Why Choose Our <span className="text-blue-600">Flower Pot</span>?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experience the perfect blend of strength, durability, and
-              cost-effectiveness with our premium Garden Bench solutions.
+              cost-effectiveness with our premium Flower Pot solutions.
             </p>
           </motion.div>
 
@@ -417,7 +422,7 @@ const GardenBenchProductPage = () => {
               <span className="text-yellow-500">Every Application</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our Garden Bench are versatile solutions suitable for various
+              Our Flower Pot are versatile solutions suitable for various
               sectors and requirements.
             </p>
           </motion.div>
@@ -452,11 +457,13 @@ const GardenBenchProductPage = () => {
         <div className="container mx-auto px-4">
           <motion.div {...fadeInUp} className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-blue-600">Garden Bench</span>
+              Our <span className="text-blue-600">Flower Pot</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Providing you the best range of 3 seater rectangular rcc garden
-              bench with effective & timely delivery.
+              Enhance your space with our beautifully crafted flower pots,
+              designed for durability and style. Perfect for indoor or outdoor
+              use, each pot offers a timeless look to complement your plants and
+              surroundings.
             </p>
           </motion.div>
 
@@ -467,4 +474,4 @@ const GardenBenchProductPage = () => {
   );
 };
 
-export default GardenBenchProductPage;
+export default FlowerPotProductPage;

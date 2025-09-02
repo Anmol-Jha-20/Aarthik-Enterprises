@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import PrecaustCompoundImage from "../../assets/PrecaustCompoundImage.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -77,7 +79,10 @@ const AboutSection = () => {
                   : "-translate-x-20 opacity-0"
               }`}
             >
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold px-8 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+              <button
+                onClick={() => navigate("/about-us")}
+                className="bg-yellow-400 hover:bg-yellow-500 cursor-pointer text-white font-semibold px-8 py-4 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+              >
                 More About Us
               </button>
             </div>

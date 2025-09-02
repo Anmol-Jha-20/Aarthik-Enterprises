@@ -21,8 +21,9 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
-import RccPoleImage from "../../assets/RccPoleImage.png";
+import RccBench3 from "../../assets/RccBench3.jpeg";
+import RccBench1 from "../../assets/RccBench1.jpeg";
+import RccBench2 from "../../assets/RccBench2.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -121,7 +122,10 @@ const ProductCard = ({ product, index }) => {
                 {/* <Contact className="w-5 h-5 mr-2" /> */}
                 Contact Us
               </button>
-              <button className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center">
+              <button
+                onClick={() => (window.location.href = "tel:918075612353")}
+                className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </button>
@@ -206,6 +210,7 @@ const ProductShowcase = () => {
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487871438/PS/IW/PX/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487871443/XK/IT/PC/192062814/2-seater-rcc-precast-concrete-bench-1000x1000.jpg",
+        RccBench2,
       ],
       specs: {
         "Minimum Order Quantity": "3 Piece",
@@ -224,6 +229,8 @@ const ProductShowcase = () => {
       price: "4,500",
       images: [
         "https://5.imimg.com/data5/ANDROID/Default/2023/7/329877091/XT/CN/PK/192062814/product-jpeg-500x500.jpg",
+        RccBench3,
+        RccBench1,
       ],
       specs: {
         "Minimum Order Quantity": "5 Piece",
@@ -412,12 +419,12 @@ const RccBenchProductPage = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Get Quote Now
                 </button>
-                {/* <button className="border-2 border-white text-black hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
-                   View Specifications
-                 </button> */}
               </motion.div>
             </motion.div>
 

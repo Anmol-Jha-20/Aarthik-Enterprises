@@ -21,8 +21,8 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
 import RccPoleImage from "../../assets/RccPoleImage.png";
+import RccFencingImage from "../../assets/RccFencing.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -121,7 +121,10 @@ const ProductCard = ({ product, index }) => {
                 {/* <Contact className="w-5 h-5 mr-2" /> */}
                 Contact Us
               </button>
-              <button className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center">
+              <button
+                onClick={() => (window.location.href = "tel:918075612353")}
+                className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </button>
@@ -135,24 +138,24 @@ const ProductCard = ({ product, index }) => {
 
 const ProductShowcase = () => {
   const products = [
-    {
-      name: "Rcc Readymade Boundary Wall",
-      price: "65",
-      images: [
-        RccPoleImage,
-        "https://5.imimg.com/data5/SELLER/Default/2025/4/503652843/VG/RG/YF/192062814/rcc-readymade-boundary-wall-1000x1000.jpeg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/4/503652847/QD/LX/ET/192062814/rcc-readymade-boundary-wall-1000x1000.jpeg",
-      ],
-      specs: {
-        "Built Type": "Modular",
-        Height: "6 x 6 inches (150 mm x 150 mm)",
-        "Beam Size": "6 x 6 inches (150 mm x 150 mm)",
-        "Beam length": "As per requirement.",
-        "Country of Origin": "Made in India",
-      },
-      description:
-        "RCC Readymade Boundary Walls are precast, steel-reinforced cement concrete panels designed to offer a strong, long-lasting, and maintenance-free solution for securing property boundaries. These walls are manufactured in a controlled environment and then installed on-site, ensuring faster construction, uniform quality, and significant cost savings compared to traditional brick walls.",
-    },
+    // {
+    //   name: "Rcc Readymade Boundary Wall",
+    //   price: "65",
+    //   images: [
+    //     RccPoleImage,
+    //     "https://5.imimg.com/data5/SELLER/Default/2025/4/503652843/VG/RG/YF/192062814/rcc-readymade-boundary-wall-1000x1000.jpeg",
+    //     "https://5.imimg.com/data5/SELLER/Default/2025/4/503652847/QD/LX/ET/192062814/rcc-readymade-boundary-wall-1000x1000.jpeg",
+    //   ],
+    //   specs: {
+    //     "Built Type": "Modular",
+    //     Height: "6 x 6 inches (150 mm x 150 mm)",
+    //     "Beam Size": "6 x 6 inches (150 mm x 150 mm)",
+    //     "Beam length": "As per requirement.",
+    //     "Country of Origin": "Made in India",
+    //   },
+    //   description:
+    //     "RCC Readymade Boundary Walls are precast, steel-reinforced cement concrete panels designed to offer a strong, long-lasting, and maintenance-free solution for securing property boundaries. These walls are manufactured in a controlled environment and then installed on-site, ensuring faster construction, uniform quality, and significant cost savings compared to traditional brick walls.",
+    // },
     {
       name: "7 Feet RCC Fencing Pole",
       price: "80",
@@ -200,7 +203,7 @@ const ProductShowcase = () => {
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487707919/GW/AN/LF/192062814/rcc-construction-pole-1000x1000.jpg",
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487716600/KN/PB/YG/192062814/rcc-construction-pole-1000x1000.jpg",
-        "https://5.imimg.com/data5/SELLER/Default/2025/2/487677230/NU/EV/ZI/192062814/5-feet-rcc-readymade-compound-wall-1000x1000.jpeg",
+        RccFencingImage,
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487665274/KB/SW/AH/192062814/grey-rcc-pole-1000x1000.jpeg",
       ],
       specs: {
@@ -445,7 +448,10 @@ const RCCPoleProductPage = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Get Quote Now
                 </button>
                 {/* <button className="border-2 border-white text-black hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">

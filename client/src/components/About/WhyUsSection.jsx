@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Check, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const WhyChooseUsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -212,12 +214,16 @@ const WhyChooseUsSection = () => {
             {/* CTA Button */}
             <motion.div variants={itemVariants}>
               <motion.button
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl flex items-center space-x-3 group transition-all duration-300"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 cursor-pointer hover:from-yellow-500 hover:to-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl flex items-center space-x-3 group transition-all duration-300"
                 whileHover={{
                   scale: 1.05,
                   boxShadow: "0 20px 40px rgba(245, 158, 11, 0.4)",
                 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => {
+                  navigate("/about-us");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
               >
                 <span>More About Us</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -248,6 +254,8 @@ const WhyChooseUsSection = () => {
 
 // Add the blue background with pattern overlay
 const EnhancedWhyChooseUs = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 overflow-hidden">
       {/* Geometric Pattern Overlay */}

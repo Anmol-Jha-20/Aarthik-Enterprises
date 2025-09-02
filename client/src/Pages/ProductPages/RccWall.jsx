@@ -83,7 +83,10 @@ const ProductCard = ({ product, index }) => {
                   ₹{product.price}
                 </div>
                 <div className="text-gray-500">/ Sq ft</div>
-                <button className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-blue-100 text-blue-600 px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-200 transition-colors duration-300"
+                >
                   Get Latest Price
                 </button>
               </div>
@@ -121,7 +124,10 @@ const ProductCard = ({ product, index }) => {
                 {/* <Contact className="w-5 h-5 mr-2" /> */}
                 Contact Us
               </button>
-              <button className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center">
+              <button
+                onClick={() => (window.location.href = "tel:918075612353")}
+                className="flex-1 border-2 border-blue-600 text-blue-600 hover:bg-blue-600 cursor-pointer hover:text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center"
+              >
                 <Phone className="w-5 h-5 mr-2" />
                 Call Now
               </button>
@@ -467,77 +473,6 @@ const RCCWallProductPage = () => {
         </motion.div>
       </section>
 
-      {/* Hero Section */}
-      {/* <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative container mx-auto px-4 py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-white"
-            >
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="inline-flex items-center bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6"
-              >
-                <Star className="w-4 h-4 mr-2" />
-                Premium Quality Products
-              </motion.div>
-
-              <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-                RCC Wall
-              </h1>
-
-              <p className="text-xl lg:text-2xl mb-8 text-blue-100">
-                <span className="block font-semibold text-yellow-400">
-                  Strong. Durable. Maintenance-Free.
-                </span>
-              </p>
-
-              <p className="text-lg mb-8 leading-relaxed text-blue-50">
-                Our RCC (Reinforced Cement Concrete) Walls provide long-lasting
-                and cost-effective boundary solutions for both residential and
-                commercial spaces. Built with precision and quality materials
-                for superior strength and stability.
-              </p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="flex flex-col sm:flex-row gap-4"
-              >
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-                  Get Quote Now
-                </button>
-                <button className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
-                  View Specifications
-                </button>
-              </motion.div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="RCC Wall Construction"
-                  className="w-full h-96 lg:h-[500px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
       <section className="relative overflow-hidden">
         {/* <div className="absolute inset-0 bg-black/20"></div> */}
         <div className="relative container mx-auto px-4 py-16 lg:py-24">
@@ -582,7 +517,10 @@ const RCCWallProductPage = () => {
                 transition={{ delay: 0.6 }}
                 className="flex flex-col sm:flex-row gap-4"
               >
-                <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                <button
+                  onClick={() => (window.location.href = "tel:918075612353")}
+                  className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 cursor-pointer px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
                   Get Quote Now
                 </button>
                 {/* <button className="border-2 border-white text-black hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300">
@@ -705,119 +643,6 @@ const RCCWallProductPage = () => {
           <ProductShowcase />
         </div>
       </section>
-
-      {/* About Section */}
-      {/* <section className="py-16 lg:py-24 bg-gradient-to-br from-blue-50 to-blue-100">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Why <span className="text-blue-600">Aarthik Enterprises</span>?
-              </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                Choose Aarthik Enterprises for trusted quality and timely
-                delivery. Our RCC walls are manufactured under strict quality
-                control for reliable performance that lasts.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
-                    <CheckCircle className="w-5 h-5 text-gray-900" />
-                  </div>
-                  <span className="text-lg text-gray-700">
-                    Superior quality materials and construction
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
-                    <CheckCircle className="w-5 h-5 text-gray-900" />
-                  </div>
-                  <span className="text-lg text-gray-700">
-                    Strict quality control and testing
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mr-4">
-                    <CheckCircle className="w-5 h-5 text-gray-900" />
-                  </div>
-                  <span className="text-lg text-gray-700">
-                    Timely delivery and installation
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Construction Quality"
-                  className="w-full h-96 object-cover"
-                />
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section> */}
-
-      {/* CTA Section */}
-      {/* <section className="py-16 lg:py-24 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800">
-        <div className="container mx-auto px-4 text-center">
-          <motion.div {...fadeInUp} className="max-w-4xl mx-auto">
-            <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-              Ready to Build with{" "}
-              <span className="text-yellow-400">Quality RCC Walls</span>?
-            </h2>
-            <p className="text-xl text-blue-100 mb-10">
-              Contact us today to discuss your requirements or request a
-              customized solution.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-lg flex items-center"
-              >
-                <Phone className="w-5 h-5 mr-3" />
-                Contact Us Today
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-10 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center"
-              >
-                <Mail className="w-5 h-5 mr-3" />
-                Get Free Quote
-              </motion.button>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-blue-100">
-              <div className="flex items-center">
-                <Phone className="w-5 h-5 mr-2" />
-                <span>+91 98765 43210</span>
-              </div>
-              <div className="flex items-center">
-                <Mail className="w-5 h-5 mr-2" />
-                <span>info@aarthikenterprises.com</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="w-5 h-5 mr-2" />
-                <span>Your Location, India</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section> */}
     </div>
   );
 };
