@@ -13,6 +13,13 @@ import {
   Mail,
   MapPin,
 } from "lucide-react";
+import RccWallImage from "../assets/RccWallImage.webp";
+import RccGardenImage from "../assets/Rccgardenimage.jpeg";
+import RccBenchImage2 from "../assets/RccBench2.jpeg";
+import FlowerPot1 from "../assets/FlowerPot1.jpeg";
+import TreeGuardImage from "../assets/TreeGuard.jpeg";
+import RccBenchImage3 from "../assets/RccBench3.jpeg";
+import RccFencingImage from "../assets/RccFencing.jpeg";
 
 const AarthikGallery = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -74,8 +81,7 @@ const AarthikGallery = () => {
       id: 7,
       title: "Garden RCC Bench",
       category: "bench",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/4/503687657/RJ/QC/AY/192062814/with-arm-rest-3-seater-cast-iron-park-bench-for-long-lasting-and-durable-with-back-500x500.jpg",
+      image: RccGardenImage,
       description:
         "With Arm Rest 3 Seater Cast Iron Park Bench, For Long Lasting And Durable, With Back",
     },
@@ -86,6 +92,37 @@ const AarthikGallery = () => {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/2/487879840/BE/RB/HN/192062814/10-feet-rcc-readymade-precast-compound-wall-1000x1000.jpg",
       description: "Strong and durable compound wall solution",
+    },
+    {
+      id: 9,
+      title: "RCC Bench",
+      category: "bench",
+      image: RccBenchImage2,
+      description:
+        "A sturdy, weather-resistant concrete bench for outdoor seating.",
+    },
+    {
+      id: 10,
+      title: "Flower Pot",
+      category: "flower-pot",
+      image: FlowerPot1,
+      description: "A container used to hold and grow decorative plants.",
+    },
+    {
+      id: 11,
+      title: "Tree Guard",
+      category: "tree-guard",
+      image: TreeGuardImage,
+      description:
+        "A protective barrier designed to shield young trees from damage.",
+    },
+    {
+      id: 12,
+      title: "Bench",
+      category: "bench",
+      image: RccBenchImage3,
+      description:
+        "A bench with backrest, designed for durable public or garden seating.",
     },
   ];
 
@@ -153,12 +190,12 @@ const AarthikGallery = () => {
         <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
           {/* Background Image */}
           <img
-            src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={RccWallImage}
             alt="Construction Background"
             className="absolute w-full h-full object-cover"
           />
           {/* Overlay */}
-          <div className="absolute w-full h-full bg-black opacity-50"></div>
+          {/* <div className="absolute w-full h-full bg-black opacity-50"></div> */}
 
           {/* Content */}
           <motion.div

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import RccWallImage from "../../assets/RccWallImage.webp";
+import RccFencingImage from "../../assets/PrecaustCompoundImage.jpeg";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,8 +16,7 @@ const HeroSlider = () => {
       subtitle: "There is construction!",
       description:
         "Founded in 2006, Aarthik Enterprises is one of India’s most trusted manufacturers of high-quality RCC infrastructure products.",
-      image:
-        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+      image: RccWallImage,
       alt: "Construction workers discussing project plans",
     },
     {
@@ -24,8 +25,7 @@ const HeroSlider = () => {
       subtitle: "quality and results!",
       description:
         "Founded in 2006, Aarthik Enterprises is one of India’s most trusted manufacturers of high-quality RCC infrastructure products.",
-      image:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2076&q=80",
+      image: RccFencingImage,
       alt: "Construction site with worker reviewing blueprints",
     },
     {
@@ -136,7 +136,7 @@ const HeroSlider = () => {
             {/* Description */}
             <div className="mb-10 overflow-hidden">
               <p
-                className={`text-white/90 text-lg md:text-xl font-roboto max-w-2xl leading-relaxed transform transition-all duration-700 delay-500 ${
+                className={`text-white/90 pt-4 text-lg md:text-xl font-roboto max-w-2xl leading-relaxed transform transition-all duration-700 delay-500 ${
                   currentSlide >= 0
                     ? "translate-y-0 opacity-100"
                     : "translate-y-8 opacity-0"
@@ -166,7 +166,7 @@ const HeroSlider = () => {
 
         {/* Navigation Arrows */}
         <div
-          className={`absolute left-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ${
+          className={`absolute left-4 top-1/2 md:top-1/2 xl:top-1/2 lg:top-1/2 transform -translate-y-1/2 transition-all duration-300 ${
             isHovered ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
           }`}
         >

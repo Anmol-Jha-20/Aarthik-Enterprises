@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import TestimonialSection from "../components/testimonial/Testimonial.jsx";
 import { Check, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import RccWallImage from "../assets/RccWallImage.webp";
 
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -83,12 +84,12 @@ const AboutPage = () => {
       <section className="relative w-full h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
         {/* Background Image */}
         <img
-          src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={RccWallImage}
           alt="Construction Background"
           className="absolute w-full h-full object-cover"
         />
         {/* Overlay */}
-        <div className="absolute w-full h-full bg-black opacity-50"></div>
+        {/* <div className="absolute w-full h-full bg-black opacity-50"></div> */}
 
         {/* Content */}
         <motion.div

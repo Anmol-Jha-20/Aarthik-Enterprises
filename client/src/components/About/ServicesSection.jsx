@@ -9,6 +9,11 @@ import {
   Forklift,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import RccGardenImage from "../../assets/Rccgardenimage.jpeg";
+import RccBenchImage2 from "../../assets/RccBench2.jpeg";
+import RccBenchImage4 from "../../assets/RccBench4.jpeg";
+import FlowerPot1 from "../../assets/FlowerPot1.jpeg";
+import TreeGuardImage from "../../assets/TreeGuard.jpeg";
 
 const ServicesSection = () => {
   const services = [
@@ -56,8 +61,7 @@ const ServicesSection = () => {
       icon: PaintBucket,
       iconBg: "bg-orange-100",
       iconColor: "text-orange-500",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/6/320888671/DR/MI/OT/192062814/rcc-garden-bench-500x500.jpg",
+      image: RccBenchImage2,
       link: "/rcc-bench",
     },
     {
@@ -80,8 +84,7 @@ const ServicesSection = () => {
       icon: Forklift,
       iconBg: "bg-gray-100",
       iconColor: "text-gray-600",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2025/4/503687657/RJ/QC/AY/192062814/with-arm-rest-3-seater-cast-iron-park-bench-for-long-lasting-and-durable-with-back-1000x1000.jpg",
+      image: RccGardenImage,
       link: "/rcc-garden-bench",
     },
     {
@@ -104,8 +107,7 @@ const ServicesSection = () => {
       icon: Forklift,
       iconBg: "bg-gray-100",
       iconColor: "text-gray-600",
-      image:
-        "https://img.freepik.com/free-photo/bench-park_1187-2312.jpg?t=st=1755676028~exp=1755679628~hmac=cddfe8a7364d5bbac8e8f7166c4184fbc55cc7a4ce36d9027008662ce9bbb471&w=1060",
+      image: RccBenchImage4,
       link: "/concrete-bench",
     },
     {
@@ -119,6 +121,28 @@ const ServicesSection = () => {
       image:
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503686774/CQ/YR/HX/192062814/grey-cement-railing-pillar-for-staircase-500x500.jpg",
       link: "/cement-pillar",
+    },
+    {
+      id: 10,
+      title: "Flower Pot",
+      description:
+        "Our Flower Pot is the perfect combination of strength, style, and simplicity. Crafted from premium materials, this pot is designed to withstand all weather conditions while keeping your plants safe and thriving. Ideal for both indoor and outdoor use, its timeless design complements any décor — from modern balconies to lush garden spaces. With its low-maintenance finish and durable build, this flower pot is made to last season after season.",
+      icon: Forklift,
+      iconBg: "bg-gray-100",
+      iconColor: "text-gray-600",
+      image: FlowerPot1,
+      link: "/flower-pot",
+    },
+    {
+      id: 11,
+      title: "Tree Guard",
+      description:
+        "Offering the best range of grey cement railing pillars for staircases — crafted for strength, style, and durability, with reliable and timely delivery.",
+      icon: Forklift,
+      iconBg: "bg-gray-100",
+      iconColor: "text-gray-600",
+      image: TreeGuardImage,
+      link: "/tree-guard",
     },
   ];
 
@@ -233,7 +257,7 @@ const ServicesSection = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-[300px] object-cover"
+                    className="w-full h-[300px] object-fill"
                   />
                 </motion.div>
 

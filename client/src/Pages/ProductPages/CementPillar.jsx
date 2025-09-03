@@ -21,8 +21,8 @@ import {
   Palette,
   Settings,
 } from "lucide-react";
-import RccWallProductImage from "../../assets/RccWallIProductImage.png";
-import RccPoleImage from "../../assets/RccPoleImage.png";
+import CementPillar2 from "../../assets/CementPillar2.jpeg";
+import CementPillar3 from "../../assets/CementPillar3.jpeg";
 
 const ProductCard = ({ product, index }) => {
   const [selectedImage, setSelectedImage] = useState(0);
@@ -154,6 +154,8 @@ const ProductShowcase = () => {
       price: "200",
       images: [
         "https://5.imimg.com/data5/SELLER/Default/2025/4/503686774/CQ/YR/HX/192062814/grey-cement-railing-pillar-for-staircase-500x500.jpg",
+        CementPillar2,
+        CementPillar3,
       ],
       specs: {
         Shape: "Rectangular",
