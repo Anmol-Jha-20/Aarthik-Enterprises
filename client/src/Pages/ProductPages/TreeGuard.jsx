@@ -77,7 +77,7 @@ const ProductCard = ({ product, index }) => {
                 {product.name}
               </h3>
 
-              <div className="flex items-center gap-4 mb-6">
+              {/* <div className="flex items-center gap-4 mb-6">
                 <div className="text-2xl lg:text-3xl font-bold text-blue-600">
                   ₹{product.price}
                 </div>
@@ -88,7 +88,7 @@ const ProductCard = ({ product, index }) => {
                 >
                   Get Latest Price
                 </button>
-              </div>
+              </div> */}
             </div>
 
             {/* Product Specifications */}

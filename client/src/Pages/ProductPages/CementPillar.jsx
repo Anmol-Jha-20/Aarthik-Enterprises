@@ -257,6 +257,23 @@ const CementPillarProductPage = () => {
     },
   ];
 
+  const images = [
+    "https://5.imimg.com/data5/SELLER/Default/2025/4/503686774/CQ/YR/HX/192062814/grey-cement-railing-pillar-for-staircase-500x500.jpg",
+    CementPillar2,
+    CementPillar3,
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 2000); // har 3 second me change hoga
+    return () => clearInterval(interval);
+  }, [images.length]);
+
   return (
     <div className="min-h-screen bg-white">
       {/* SEO Meta Tags would go in document head */}
@@ -354,7 +371,7 @@ const CementPillarProductPage = () => {
               </motion.div>
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -365,6 +382,26 @@ const CementPillarProductPage = () => {
                   src="https://5.imimg.com/data5/SELLER/Default/2025/4/503686774/CQ/YR/HX/192062814/grey-cement-railing-pillar-for-staircase-500x500.jpg"
                   alt="Cement Pillar Construction"
                   className="w-full h-96 lg:h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+            </motion.div> */}
+
+            <motion.div
+              initial={{ opacity: 0, x: 60 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <motion.img
+                  key={currentIndex} // ye framer-motion ko transition trigger karayega
+                  src={images[currentIndex]}
+                  alt="Cement Pillar Construction"
+                  className="w-full h-96 lg:h-[500px] object-cover"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.8 }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>

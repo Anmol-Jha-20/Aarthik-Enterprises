@@ -4,6 +4,7 @@ import TestimonialSection from "../components/testimonial/Testimonial.jsx";
 import { Check, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import RccWallImage from "../assets/RccWallImage.webp";
+import RccFencingImage from "../assets/PrecaustCompoundImage.jpeg";
 
 const AboutPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -130,7 +131,7 @@ const AboutPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src={RccFencingImage}
                     alt="Construction workers at construction site"
                     className="w-full h-64 object-cover"
                   />
@@ -148,7 +149,7 @@ const AboutPage = () => {
                   transition={{ duration: 0.3 }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                    src={RccWallImage}
                     alt="Construction worker wearing safety mask and helmet"
                     className="w-full h-80 object-cover"
                   />
